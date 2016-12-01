@@ -21,7 +21,7 @@ public class LookMoveTo : MonoBehaviour {
 		ray = new Ray(camera.position, camera.rotation * Vector3.forward);
 		hits = Physics.RaycastAll(ray);
 
-		for(int i = 0; i < hits.Length; i++){
+		for(int i = 0;i < hits.Length;i++){
 			RaycastHit hit = hits[i];
 			hitObject = hit.collider.gameObject;
 			if (hitObject == ground) {
